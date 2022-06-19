@@ -1,0 +1,59 @@
+/* Xử lý css LIÊN HỆ  */
+
+.form .form-contact {
+    background-color: white;
+    height: 400px;
+    width: 850px;
+    border-radius: 10px;
+}
+
+.form-contact span {
+    padding: 0px 20px;
+}
+
+.form-group {
+    padding: 10px 20px;
+}
+
+#form-input {
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    border-color: beige;
+    padding-left: 10px;
+}
+
+input[type=submit] {
+    background: transparent;
+    border: 0px;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    background: #3d3b3b;
+    border-radius: 20px;
+    width: 100%;
+    color: rgb(241, 236, 225);
+    float: unset;
+    margin-bottom: 10px;
+}
+
+.form .block-contact {
+    background-color: white;
+    height: 400px;
+    width: 600px;
+    border-radius: 10px;
+    padding-left: 50px;
+}
+
+.block-contact li {
+    list-style: none;
+    padding: 8px;
+}
+
+.block-contact li a {
+    text-decoration: none;
+    color: black;
+}
+
+.block-contact i {
+    padding-right: 10px;
+}

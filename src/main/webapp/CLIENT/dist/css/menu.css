@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+*:focus {
+    outline: none;
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+.menu_header{
+    background-color: #020202;
+}
+a.menu-item {
+    text-decoration: none;
+    color: #949494;
+    text-transform: uppercase;
+    font-family: 'Arima Madurai', cursive;
+    font-size: 17.4px;
+}
+a.menu-item:hover{
+    color: #fff;
+}
+.underline_menu-item{
+    background-color: #ed1c24;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s;
+}
+a.menu-item:hover  .underline_menu-item{
+    animation: showUnderLine 0.2s forwards linear;
+}
+@keyframes showUnderLine{
+    0%{width: 0%; opacity: 1;}
+    25%{width: 25%; opacity: 1;}
+    50%{width: 50%; opacity: 1;}
+    100%{width: 100%; opacity: 1;}
+}
+
+.icon_menu_right{
+    color: #949494;
+    margin-left: 18px;
+    text-decoration: none;
+    margin-left: 17px;
+    font-size: 17px;
+}
+.icon_menu_right:hover{
+    color: #fff;
+}
+
+#menu_header {
+    display: none;
+}
+
+#menu_header_mobile {
+    display: block;
+}
+
+.menulist_mobile {
+    display: none;
+}
+.cart-right{
+    display: none;
+    z-index: 7;
+}
+.search-right{
+    display: none;
+    z-index: 7;
+}
+
+
+@media (min-width: 780px) {
+    #menu_header {
+        display: block;
+    }
+
+    #menu_header_mobile {
+        display: none;
+    }
+
+    .menulist_mobile {
+        display: none;
+    }
+}
+
+.fixed-menu-top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}

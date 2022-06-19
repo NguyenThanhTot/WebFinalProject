@@ -1,0 +1,14 @@
+.article-info-more li {
+    list-style: none;
+    padding-left: 20px;
+    color: rgb(9, 45, 209);
+}
+
+.article-info-more {
+    display: flex;
+}
+
+.post-tintuc li a {
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+@media only screen and (max-width: 1600px)
+{
+
+}
+@media only screen and (max-width: 1540px)
+{
+	
+}
+@media only screen and (max-width: 1380px)
+{
+	
+}
+@media only screen and (max-width: 1280px)
+{
+	
+}
+@media only screen and (max-width: 1199px)
+{
+	.single_product_thumbnails ul li
+	{
+		height: 110px;
+	}
+	.single_product_image
+	{
+		height: 436px;
+	}
+}
+@media only screen and (max-width: 1024px)
+{
+	
+}
+@media only screen and (max-width: 991px)
+{
+	h1{font-size: 48px;}
+	h2{font-size: 36px;}
+
+	.image_col
+	{
+		padding-right: 15px;
+	}
+	.single_product_image
+	{
+		margin-bottom: 15px;
+		height: 785px;
+	}
+	.single_product_thumbnails
+	{
+		height: auto;
+	}
+	.single_product_thumbnails ul li
+	{
+		display: inline-block;
+		width: 110px;
+		margin-bottom: 0px;
+		margin-right: 10px;
+	}
+	.single_product_thumbnails ul li img
+	{
+		height: 100%;
+	}
+	.product_details
+	{
+		margin-top: 71px;
+	}
+}
+@media only screen and (max-width: 959px)
+{
+	
+}
+@media only screen and (max-width: 880px)
+{
+	
+}
+@media only screen and (max-width: 768px)
+{
+}
+
+@media only screen and (max-width: 767px)
+{
+	h1{font-size: 36px;}
+	h2{font-size: 24px;}
+	h6{font-size: 12px;}
+	.red_button a
+	{
+		font-size: 12px;
+	}
+	.single_product_image
+	{
+		height: 576px;
+	}
+}
+
+/************
+11. 575px
+************/
+
+@media only screen and (max-width: 575px)
+{
+	p
+	{
+		font-size: 13px;
+	}
+
+	.single_product_image
+	{
+		height: calc((100vw - 30px) / 0.86);
+	}
+	.quantity
+	{
+		height: auto;
+	}
+	.quantity_selector
+	{
+		height: 40px;
+		margin-left: 0px;
+		margin-top: 15px;
+	}
+	.add_to_cart_button
+	{
+		margin-left: 0px;
+		margin-top: 15px;
+	}
+
+/************
+11. 539px
+************/
+
+@media only screen and (max-width: 539px)
+{
+	
+}
+
+/************
+12. 480px
+************/
+
+@media only screen and (max-width: 480px)
+{
+	
+}
+
+/************
+13. 479px
+************/
+
+@media only screen and (max-width: 479px)
+{
+	.add_to_cart_button
+	{
+		margin-top: 20px;
+	}
+}
+
+/************
+14. 400px
+************/
+
+@media only screen and (max-width: 400px)
+{
+	
+}
