@@ -1,0 +1,57 @@
+/* CSS for mau-sac.html */
+.my_editANDremove {
+    color: RED;
+}
+
+.my_editANDremove i {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#add_new_item, #edit_item {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: none;
+}
+#edit_item section,
+#add_new_item section {
+    height: 100%;
+    position: relative;
+    background-color: none;
+}
+
+#bg_add_new_item {
+    margin-left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vmax;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.5;
+}
+#edit_item section .row,
+#add_new_item section .row {
+    padding-top: 50px
+}
+#close-form-edit,
+#close-form-addnew{
+position: absolute;
+right: 0;
+top:0;
+font-size:25px;
+padding: 10px;
+}
+#close-form-edit:hover,
+#close-form-addnew:hover{
+    color: red;
+    cursor: pointer;
+}

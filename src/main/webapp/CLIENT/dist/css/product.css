@@ -1,0 +1,124 @@
+/* Xử lý hover khi di chuyển chuột vào sản phẩm */
+.image-product {
+    max-height: 250px;
+    min-height: 250px;
+    box-sizing: border-box;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.price-product {
+    display: flex;
+    justify-content: space-between;
+    min-height: 49px;
+}
+
+.price-product .price_pd_right {
+    margin: auto 0;
+}
+
+.price_pd_right i.fa {
+    display: none;
+}
+
+.price_pd_right:hover i.far {
+    display: none;
+}
+
+.price_pd_right:hover i.fa {
+    display: block;
+}
+
+.price_pd_right_like i.far {
+    display: none;
+}
+
+.price_pd_right_like:hover i.fa {
+    display: none;
+}
+
+.price_pd_right_like:hover i.far {
+    display: block;
+}
+
+.btn_muangay {
+    height: 10%;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    justify-content: center;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    transform: translateY(10%);
+    opacity: 0;
+    transition: ease 0.4s;
+    cursor: pointer;
+}
+
+.btn_muangay .btn_muangay_coating {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.9;
+}
+
+.btn_muangay:hover .btn_muangay_coating {
+    opacity: 1;
+    animation: disappear 0.3s 1 forwards linear;
+}
+
+@keyframes disappear {
+    0% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    25% {
+        width: 75%;
+        opacity: 0.75;
+    }
+
+    75% {
+        width: 25%;
+        opacity: 0.5;
+    }
+
+    100% {
+        width: 0%;
+        opacity: 0;
+    }
+}
+
+.btn_muangay:hover {
+    border: black solid 1px;
+    color: black;
+}
+
+.product-item:hover .btn_muangay {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.product-item:hover {
+    box-shadow: 2px 1px 15px -7px gray, -2px -1px 15px -7px gray;
+}
+
+@media (max-width: 765px) {
+    .image-product {
+        max-height: 150px;
+        min-height: 150px;
+    }
+    .title-product { font-size: 14px;}
+    .btn_muangay {font-size: 12px;}
+
+}
