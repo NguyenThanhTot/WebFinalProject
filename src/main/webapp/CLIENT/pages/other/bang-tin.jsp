@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!doctype html>
 <html lang="en">
@@ -18,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
 
     <!-- Link css for menu -->
-    <link rel="stylesheet" href=".././my_css/menu.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/CLIENT/dist/css/menu.css">
     
 
 </head>
@@ -317,68 +318,23 @@
                     </div>
                 </div>
                 <!-- --------------------------- -->
+
+
                 <div class="col-12 col-lg-8">
                     <h3 class="d-flex justify-content-center">TẤT CẢ BÀI VIẾT</h3>
                     <hr>
-                    <div class="row mt-4 news-items justify-content-center">
-                        <div class="col-4 col-sm-3 p-0 image-news">
-                            <img src="../img/News/thumb (1).jpg" alt="" class="img-fluid">
+                    <c:forEach items="${listN}" var="news">
+                        <div class="row mt-4 news-items justify-content-center">
+                            <div class="col-4 col-sm-3 p-0 image-news">
+                                <img src="" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-8 col-sm-8 pr-0">
+                                <a href="bang-tin-chi-tiet.jsp" style="text-decoration: none; color: black; font-size: 15px;">${news.title}</a>
+                                <p style="font-size: 12px; font-style: italic; margin-bottom: 0;">${news.dateUpdate}</p>
+                                <p style="font-size: 14px;">${news.description}</p>
+                            </div>
                         </div>
-                        <div class="col-8 col-sm-8 pr-0">
-                            <a href="bang-tin-chi-tiet.jsp" style="text-decoration: none; color: black; font-size: 15px;">BLACK FRIDAY – SALE
-                                SẬP SÀN HÀNG NGÀN ƯU ĐÃI LÊN ĐẾN 70%</a>
-                            <p style="font-size: 12px; font-style: italic; margin-bottom: 0;">23/11/2021</p>
-                            <p style="font-size: 14px;">Cơ hội mua sắm không cần nhìn giá có 1-0-2 đã chính thức bắt đầu. Hàng ngàn sản phẩm với
-                                mức...</p>
-                        </div>
-                    </div>
-                    <div class="row mt-4 news-items justify-content-center">
-                        <div class="col-4 col-sm-3 p-0 image-news">
-                            <img src="../img/News/thumb (2).jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-8 col-sm-8 pr-0">
-                            <a href="bang-tin-chi-tiet.jsp" style="text-decoration: none; color: black; font-size: 15px;">BLACK FRIDAY – SALE
-                                SẬP SÀN HÀNG NGÀN ƯU ĐÃI LÊN ĐẾN 70%</a>
-                            <p style="font-size: 12px; font-style: italic; margin-bottom: 0;">23/11/2021</p>
-                            <p style="font-size: 14px;">Cơ hội mua sắm không cần nhìn giá có 1-0-2 đã chính thức bắt đầu. Hàng ngàn sản phẩm với
-                                mức...</p>
-                        </div>
-                    </div>
-                    <div class="row mt-4 news-items justify-content-center">
-                        <div class="col-4 col-sm-3 p-0 image-news">
-                            <img src="../img/News/thumb (3).jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-8 col-sm-8 pr-0">
-                            <a href="bang-tin-chi-tiet.jsp" style="text-decoration: none; color: black; font-size: 15px;">BLACK FRIDAY – SALE
-                                SẬP SÀN HÀNG NGÀN ƯU ĐÃI LÊN ĐẾN 70%</a>
-                            <p style="font-size: 12px; font-style: italic; margin-bottom: 0;">23/11/2021</p>
-                            <p style="font-size: 14px;">Cơ hội mua sắm không cần nhìn giá có 1-0-2 đã chính thức bắt đầu. Hàng ngàn sản phẩm với
-                                mức...</p>
-                        </div>
-                    </div>
-                    <div class="row mt-4 news-items justify-content-center">
-                        <div class="col-4 col-sm-3 p-0 image-news">
-                            <img src="../img/News/thumb (4).png" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-8 col-sm-8 pr-0">
-                            <a href="bang-tin-chi-tiet.jsp" style="text-decoration: none; color: black; font-size: 15px;">BLACK FRIDAY – SALE
-                                SẬP SÀN HÀNG NGÀN ƯU ĐÃI LÊN ĐẾN 70%</a>
-                            <p style="font-size: 12px; font-style: italic; margin-bottom: 0;">23/11/2021</p>
-                            <p style="font-size: 14px;">Cơ hội mua sắm không cần nhìn giá có 1-0-2 đã chính thức bắt đầu. Hàng ngàn sản phẩm với
-                                mức...</p>
-                        </div>
-                    </div>
-                    <div class="row mt-4 news-items justify-content-center">
-                        <div class="col-4 col-sm-3 p-0 image-news">
-                            <img src="../img/News/thumb (5).png" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-8 col-sm-8 pr-0">
-                            <a href="bang-tin-chi-tiet.jsp" style="text-decoration: none; color: black; font-size: 15px;">BLACK FRIDAY – SALE
-                                SẬP SÀN HÀNG NGÀN ƯU ĐÃI LÊN ĐẾN 70%</a>
-                            <p style="font-size: 12px; font-style: italic; margin-bottom: 0;">23/11/2021</p>
-                            <p style="font-size: 14px;">Cơ hội mua sắm không cần nhìn giá có 1-0-2 đã chính thức bắt đầu. Hàng ngàn sản phẩm với
-                                mức...</p>
-                        </div>
+                    </c:forEach>
                     </div>
                     
 
@@ -488,7 +444,7 @@
     <script>
         document.querySelector('.head-news').addEventListener('click', () => { document.querySelector('.content-news-mobile').classList.toggle('mystyle'); });
     </script>
-    <script src="../my_js/menu.js"></script>
+    <script src="<%=request.getContextPath()%>/CLIENT/dist/js/menu.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

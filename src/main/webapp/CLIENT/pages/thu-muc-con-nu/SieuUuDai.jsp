@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,9 +11,9 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <!--link css-->
-    <link rel="stylesheet" href="../../my_css/Menu_con.css">
-    <link rel="stylesheet" href="../../my_css/menu.css">
-    <link rel="stylesheet" href="../../my_css/product.css">
+    <link rel="stylesheet"  href="<%=request.getContextPath()%>/CLIENT/dist/css/menu_con.css">
+    <link rel="stylesheet"  href="<%=request.getContextPath()%>/CLIENT/dist/css/menu.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/CLIENT/dist/css/product.css">
     <!-- LINK FONT MENU font-family: 'Arima Madurai', cursive;-->
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@900&display=swap" rel="stylesheet">
     <!-- LINK FONT LOGO MENU font-family: 'Bungee Shade', cursive;-->
@@ -249,322 +250,30 @@
         <a href="../ThuMucConNu/SieuUuDai.jsp" class="category-present text-dark"
            style="font-weight: 500; text-decoration: none;">Siêu ưu đãi</a>
     </div>
-    <div class="container mb-5">
-        <div class="container-heading" style="text-align: center">
-            <h3>SẢN PHẨM ƯU ĐÃI</h3>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="product-item col-5 col-md-4 col-lg-3 pb-3">
-                <div class="image-product mt-3" style="background-image: url(../../img/Nu/AoThun/thun19.jpg);">
-                </div>
-                <b class="title-product d-flex justify-content-center mt-2">Áo thun Oversize Unisex UNS12</b>
-                <div class="price-product mb-4">
-                    <div class="price_pd_left">
-                        <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">290.000vnd</p>
-                        <strike class="price-discount" style="font-size: 12px;">300.000vnd</strike>
+    <div class="container mt-4 mb-5">
+        <div class="container-heading mb-4" style="text-align: center">
+            <h4>Siêu ưu đãi</h4>
+            <div class="row justify-content-center">
+                <c:forEach items="${listProductsUuDai}" var="product">
+                    <div class="product-item col-5 col-lg-3 pb-3">
+                        <div class="image-product mt-3" style="background-image: url(../../dist/img/Nu/AoThun/thun7.jpg);">
+                        </div>
+                        <b class="title-product d-flex justify-content-center mt-2">${product.nameProduct}</b>
+                        <div class="price-product mb-4">
+                            <div class="price_pd_left">
+                                <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">${product.priceDesc}</p>
+                                <strike class="price-discount" style="font-size: 12px;">${product.price}</strike>
+                            </div>
+                            <div class="price_pd_right">
+                                <i class="far fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="btn_muangay">MUA NGAY
+                            <div class="btn_muangay_coating"></div>
+                        </div>
                     </div>
-                    <div class="price_pd_right">
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="btn_muangay">MUA NGAY
-                    <div class="btn_muangay_coating"></div>
-                </div>
-            </div>
-
-            <div class="product-item col-5 col-md-4 col-lg-3 pb-3">
-                <div class="image-product mt-3" style="background-image: url(../../img/Nu/Quan/quan2.jpg);">
-                </div>
-                <b class="title-product d-flex justify-content-center mt-2">Quần sooc bò vạt CV32</b>
-                <div class="price-product mb-4">
-                    <div class="price_pd_left">
-                        <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">330.000vnd</p>
-                        <strike class="price-discount" style="font-size: 12px;">350.000vnd</strike>
-                    </div>
-                    <div class="price_pd_right">
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="btn_muangay">MUA NGAY
-                    <div class="btn_muangay_coating"></div>
-                </div>
-            </div>
-
-            <div class="product-item col-5 col-md-4 col-lg-3 pb-3">
-                <div class="image-product mt-3" style="background-image: url(../../img/Nu/AoKhoac/khoac10.jpg);">
-                </div>
-                <b class="title-product d-flex justify-content-center mt-2">Áo khoác nữ công sở CS52</b>
-                <div class="price-product mb-4">
-                    <div class="price_pd_left">
-                        <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">399.000vnd</p>
-                        <strike class="price-discount" style="font-size: 12px;">415.000vnd</strike>
-                    </div>
-                    <div class="price_pd_right">
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="btn_muangay">MUA NGAY
-                    <div class="btn_muangay_coating"></div>
-                </div>
-            </div>
-
-            <div class="product-item col-5 col-md-4 col-lg-3 pb-3">
-                <div class="image-product mt-3" style="background-image: url(../../img/Nu/Vay/vay6.jpg);">
-                </div>
-                <b class="title-product d-flex justify-content-center mt-2">Chân váy chữ A cá tính CT62</b>
-                <div class="price-product mb-4">
-                    <div class="price_pd_left">
-                        <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">315.000vnd</p>
-                        <strike class="price-discount" style="font-size: 12px;">330.000vnd</strike>
-                    </div>
-                    <div class="price_pd_right">
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="btn_muangay">MUA NGAY
-                    <div class="btn_muangay_coating"></div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row justify-content-center">
-            <div class="product-item col-5 col-md-4 col-lg-3 pb-3">
-                <div class="image-product mt-3" style="background-image: url(../../img/Nu/Yem/yem7.jpg);">
-                </div>
-                <b class="title-product d-flex justify-content-center mt-2">Yếm jean tua tua đính chữ DY72</b>
-                <div class="price-product mb-4">
-                    <div class="price_pd_left">
-                        <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">340.000vnd</p>
-                        <strike class="price-discount" style="font-size: 12px;">360.000vnd</strike>
-                    </div>
-                    <div class="price_pd_right">
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="btn_muangay">MUA NGAY
-                    <div class="btn_muangay_coating"></div>
-                </div>
-            </div>
-
-            <div class="product-item col-5 col-md-4 col-lg-3 pb-3">
-                <div class="image-product mt-3" style="background-image: url(../../img/Nu/AoThun/thun4.jpg);">
-                </div>
-                <b class="title-product d-flex justify-content-center mt-2">Áo thun cotton tay ngắn CT25</b>
-                <div class="price-product mb-4">
-                    <div class="price_pd_left">
-                        <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">299.000vnd</p>
-                        <strike class="price-discount" style="font-size: 12px;">310.000vnd</strike>
-                    </div>
-                    <div class="price_pd_right">
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="btn_muangay">MUA NGAY
-                    <div class="btn_muangay_coating"></div>
-                </div>
-            </div>
-
-            <div class="product-item col-5 col-md-4 col-lg-3 pb-3">
-                <div class="image-product mt-3" style="background-image: url(../../img/Nu/AoHoodie/hoodie16.jpg);">
-                </div>
-                <b class="title-product d-flex justify-content-center mt-2">Áo hoodie phong cách PC35</b>
-                <div class="price-product mb-4">
-                    <div class="price_pd_left">
-                        <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">360.000vnd</p>
-                        <strike class="price-discount" style="font-size: 12px;">390.000vnd</strike>
-                    </div>
-                    <div class="price_pd_right">
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="btn_muangay">MUA NGAY
-                    <div class="btn_muangay_coating"></div>
-                </div>
-            </div>
-
-            <div class="product-item col-5 col-md-4 col-lg-3 pb-3">
-                <div class="image-product mt-3" style="background-image: url(../../img/Nu/AoSomi/somi18.jpg);">
-                </div>
-                <b class="title-product d-flex justify-content-center mt-2">Áo thun Oversize Unisex UNS12</b>
-                <div class="price-product mb-4">
-                    <div class="price_pd_left">
-                        <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">315.000vnd</p>
-                        <strike class="price-discount" style="font-size: 12px;">330.000vnd</strike>
-                    </div>
-                    <div class="price_pd_right">
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="btn_muangay">MUA NGAY
-                    <div class="btn_muangay_coating"></div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row justify-content-center">
-            <div class="product-item col-5 col-md-4 col-lg-3 pb-3">
-                <div class="image-product mt-3" style="background-image: url(../../img/Nu/Yem/yem3.jpg);">
-                </div>
-                <b class="title-product d-flex justify-content-center mt-2">Yếm jean tua tua đính chữ DY72</b>
-                <div class="price-product mb-4">
-                    <div class="price_pd_left">
-                        <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">340.000vnd</p>
-                        <strike class="price-discount" style="font-size: 12px;">360.000vnd</strike>
-                    </div>
-                    <div class="price_pd_right">
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="btn_muangay">MUA NGAY
-                    <div class="btn_muangay_coating"></div>
-                </div>
-            </div>
-
-            <div class="product-item col-5 col-md-4 col-lg-3 pb-3">
-                <div class="image-product mt-3" style="background-image: url(../../img/Nu/AoThun/thun20.jpg);">
-                </div>
-                <b class="title-product d-flex justify-content-center mt-2">Áo thun cotton tay ngắn CT25</b>
-                <div class="price-product mb-4">
-                    <div class="price_pd_left">
-                        <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">299.000vnd</p>
-                        <strike class="price-discount" style="font-size: 12px;">310.000vnd</strike>
-                    </div>
-                    <div class="price_pd_right">
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="btn_muangay">MUA NGAY
-                    <div class="btn_muangay_coating"></div>
-                </div>
-            </div>
-
-            <div class="product-item col-5 col-md-4 col-lg-3 pb-3">
-                <div class="image-product mt-3" style="background-image: url(../../img/Nu/AoHoodie/hoodie14.jpg);">
-                </div>
-                <b class="title-product d-flex justify-content-center mt-2">Áo hoodie phong cách PC35</b>
-                <div class="price-product mb-4">
-                    <div class="price_pd_left">
-                        <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">360.000vnd</p>
-                        <strike class="price-discount" style="font-size: 12px;">390.000vnd</strike>
-                    </div>
-                    <div class="price_pd_right">
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="btn_muangay">MUA NGAY
-                    <div class="btn_muangay_coating"></div>
-                </div>
-            </div>
-
-            <div class="product-item col-5 col-md-4 col-lg-3 pb-3">
-                <div class="image-product mt-3" style="background-image: url(../../img/Nu/AoSomi/somi11.jpg);">
-                </div>
-                <b class="title-product d-flex justify-content-center mt-2">Áo thun Oversize Unisex UNS12</b>
-                <div class="price-product mb-4">
-                    <div class="price_pd_left">
-                        <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">315.000vnd</p>
-                        <strike class="price-discount" style="font-size: 12px;">330.000vnd</strike>
-                    </div>
-                    <div class="price_pd_right">
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="btn_muangay">MUA NGAY
-                    <div class="btn_muangay_coating"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="product-item col-5 col-md-4 col-lg-3 pb-3">
-                <div class="image-product mt-3" style="background-image: url(../../img/Nu/Yem/yem10.jpg);">
-                </div>
-                <b class="title-product d-flex justify-content-center mt-2">Yếm jean tua tua đính chữ DY72</b>
-                <div class="price-product mb-4">
-                    <div class="price_pd_left">
-                        <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">340.000vnd</p>
-                        <strike class="price-discount" style="font-size: 12px;">360.000vnd</strike>
-                    </div>
-                    <div class="price_pd_right">
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="btn_muangay">MUA NGAY
-                    <div class="btn_muangay_coating"></div>
-                </div>
-            </div>
-
-            <div class="product-item col-5 col-md-4 col-lg-3 pb-3">
-                <div class="image-product mt-3" style="background-image: url(../../img/Nu/AoThun/thun14.jpg);">
-                </div>
-                <b class="title-product d-flex justify-content-center mt-2">Áo thun cotton tay ngắn CT25</b>
-                <div class="price-product mb-4">
-                    <div class="price_pd_left">
-                        <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">299.000vnd</p>
-                        <strike class="price-discount" style="font-size: 12px;">310.000vnd</strike>
-                    </div>
-                    <div class="price_pd_right">
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="btn_muangay">MUA NGAY
-                    <div class="btn_muangay_coating"></div>
-                </div>
-            </div>
-
-            <div class="product-item col-5 col-md-4 col-lg-3 pb-3">
-                <div class="image-product mt-3" style="background-image: url(../../img/Nu/AoHoodie/hoodie8.jpg);">
-                </div>
-                <b class="title-product d-flex justify-content-center mt-2">Áo hoodie phong cách PC35</b>
-                <div class="price-product mb-4">
-                    <div class="price_pd_left">
-                        <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">360.000vnd</p>
-                        <strike class="price-discount" style="font-size: 12px;">390.000vnd</strike>
-                    </div>
-                    <div class="price_pd_right">
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="btn_muangay">MUA NGAY
-                    <div class="btn_muangay_coating"></div>
-                </div>
-            </div>
-
-            <div class="product-item col-5 col-md-4 col-lg-3 pb-3">
-                <div class="image-product mt-3" style="background-image: url(../../img/Nu/AoSomi/somi10.jpg);">
-                </div>
-                <b class="title-product d-flex justify-content-center mt-2">Áo thun Oversize Unisex UNS12</b>
-                <div class="price-product mb-4">
-                    <div class="price_pd_left">
-                        <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">315.000vnd</p>
-                        <strike class="price-discount" style="font-size: 12px;">330.000vnd</strike>
-                    </div>
-                    <div class="price_pd_right">
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="btn_muangay">MUA NGAY
-                    <div class="btn_muangay_coating"></div>
-                </div>
+                </c:forEach>
             </div>
         </div>
     </div>
@@ -640,8 +349,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <script src="../../my_js/menu.js"></script>
-    <script src="../../my_js/onClickProductChild.js"></script>
+    <script src="<%=request.getContextPath()%>/CLIENT/dist/js/menu.js"></script>
+    <script src="<%=request.getContextPath()%>/CLIENT/dist/js/onClickProduct.js"></script>
 </body>
 
 </html>
