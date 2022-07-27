@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!doctype html>
 <html lang="en">
@@ -16,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../my_css/menu.css">
+    <link rel="stylesheet"  href="<%=request.getContextPath()%>/CLIENT/dist/css/menu.css">
 </head>
 <style>
     /* .display_flex{
@@ -263,18 +264,19 @@
             <div class="row justify-content-between mt-5">
                 <div class="col-lg-5">
                     <h5 class="pt-3">Đăng nhập với mật khẩu</h5>
+                    <form action="ServletAccountLogin" method="post">
                     <div class="login_password border border-secondary rounded mt-4 p-3">
                         <div class="row m-0 p-3" style="width: 100%;">
-                            <label class="col-sm-4 col-4" for="tel_login">Điện thoại</label>
-                            <input class="col-sm-8 col-8" type="tel" id="tel_login">
+                            <label class="col-sm-4 col-4" for="tel_login">ID</label>
+                            <input name="username" class="col-sm-8 col-8" type="tel" id="tel_login">
                         </div>
                         <div class="row m-0 p-3" style="width: 100%;">
-                            <label class="col-sm-4 col-4" for="pw_login row">Mật khẩu</label>
-                            <input class="col-sm-8 col-8" type="password" id="pw_login">
+                            <label class="col-sm-4 col-4" for="pw_login">Password</label>
+                            <input name="password" class="col-sm-8 col-8" type="password" id="pw_login">
                         </div>
                         <div class="row justify-content-center mt-4">
                             <div class=" col-7 col-sm-7 btn btn-primary">
-                                <a href="tai-khoan-ket-noi-thanh-cong.jsp" style="color: white; text-decoration: none;">ĐĂNG NHẬP</a>
+                                <button type="submit" style="color: white; text-decoration: none;">ĐĂNG NHẬP</button>
                             </div>
                         </div>
                         <div class="mt-4" style="width: 40%; margin-left: auto; margin-right: auto;">Theo dõi đơn hàng
@@ -283,8 +285,8 @@
                         <div class="mt-3">
                             <a href="">Quên mật khẩu?</a>
                         </div>
-
                     </div>
+                    </form>
                 </div>
                 <div class="col-lg-6">
                     <h5 class="pt-3">Đăng ký nhanh bằng số điện thoại</h5>
@@ -358,7 +360,7 @@
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="../my_js/menu.js"></script>
+    <script src="<%=request.getContextPath()%>/CLIENT/dist/js/menu.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
