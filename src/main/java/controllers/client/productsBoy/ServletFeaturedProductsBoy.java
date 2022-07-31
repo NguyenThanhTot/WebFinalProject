@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-@WebServlet(name = "ServletFeaturedProducts", value = "/Client/FeaturedProductsBoy")
+@WebServlet(urlPatterns = "/Client/FeaturedProductsBoy")
 public class ServletFeaturedProductsBoy extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

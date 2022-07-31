@@ -1,9 +1,7 @@
 package controllers.client.productsBoy;
 
-import dao.client.implement.ProductGirlDao;
 import dao.client.implement.ProductsBoyDao;
 import models.Product;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,7 +11,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-@WebServlet(name = "ServletProductSale", value = "/Client/ProductSaleBoy")
+@WebServlet(urlPatterns = "/Client/ProductSaleBoy")
 public class ServletSaleProductsBoy extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

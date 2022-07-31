@@ -1,78 +1,84 @@
 package models;
 
 public class Product {
-    private String IdProduct;
-    private String NameProduct;
-    private String Category;
-    private String SubCategory;
-    private double Price;
-    private double PriceDegree;
-    private String Description;
+    private String idProduct;
+    private String nameProduct;
+    private String category;
+    private String subCategory;
+    private double price;
 
 
-    public Product(String idProduct, String nameProduct, String category, String subCategory, double price, double priceDegree, String description) {
-        IdProduct = idProduct;
-        NameProduct = nameProduct;
-        Category = category;
-        SubCategory = subCategory;
-        Price = price;
-        PriceDegree = priceDegree;
-        Description = description;
+    private double priceDesc;
+    private String description;
+
+    public Product(String idProduct, String nameProduct, String category, String subCategory, double price, double priceDesc, String description) {
+        this.idProduct = idProduct;
+        this.nameProduct = nameProduct;
+        this.category = category;
+        this.subCategory = subCategory;
+        this.price = price;
+        this.priceDesc = priceDesc;
+        this.description = description;
     }
+    public Product(){}
 
     public String getIdProduct() {
-        return IdProduct;
+        return idProduct;
     }
 
     public void setIdProduct(String idProduct) {
-        IdProduct = idProduct;
+        this.idProduct = idProduct;
     }
 
     public String getNameProduct() {
-        return NameProduct;
+        return nameProduct;
     }
 
     public void setNameProduct(String nameProduct) {
-        NameProduct = nameProduct;
+        this.nameProduct = nameProduct;
     }
 
     public String getCategory() {
-        return Category;
+        return category;
     }
 
     public void setCategory(String category) {
-        Category = category;
+        this.category = category;
     }
 
     public String getSubCategory() {
-        return SubCategory;
+        return subCategory;
     }
 
     public void setSubCategory(String subCategory) {
-        SubCategory = subCategory;
+        this.subCategory = subCategory;
     }
 
     public double getPrice() {
-        return Price;
+        return price;
     }
 
     public void setPrice(double price) {
-        Price = price;
+        this.price = price;
     }
 
-    public double getPriceDegree() {
-        return PriceDegree;
+    public double getPriceDesc() {
+        return priceDesc;
     }
 
-    public void setPriceDegree(double priceDegree) {
-        PriceDegree = priceDegree;
+    public void setPriceDesc(double priceDesc) {
+        this.priceDesc = priceDesc;
     }
 
     public String getDescription() {
-        return Description;
+        return description;
     }
 
     public void setDescription(String description) {
-        Description = description;
+        this.description = description;
     }
 }
+
+
+
+

@@ -123,7 +123,7 @@
                 </div>
                 <div class="product-detail row justify-content-center">
                     <div class="col-2 col-5 col-sm-3 pt-2">
-                        <img src=".././img/Nu/AoThun/thun3.jpg" alt="" class="img-fluid" style="max-height: 70px;">
+                        <img src="../../dist/img/Nu/AoThun/thun3.jpg" alt="" class="img-fluid" style="max-height: 70px;">
                     </div>
                     <div class="col-7 col-5 col-sm-7 pt-2">
                         <div class="row" style="font-size: 13px;"> Áo thun Oversize Unisex UNS12 - Trắng, L</div>
@@ -142,7 +142,7 @@
                 <hr>
                 <div class="product-detail row justify-content-center">
                     <div class="col-2 col-5 col-sm-3 pt-2">
-                        <img src="../../img/Img_Nam/Aokhoac/aokhoac3a.png" alt="" class="img-fluid"
+                        <img src="../../dist/img/Img_Nam/Aokhoac/aokhoac3a.png" alt="" class="img-fluid"
                             style="max-height: 70px;">
                     </div>
                     <div class="col-7 col-5 col-sm-7 pt-2">
@@ -162,7 +162,7 @@
                 <hr>
                 <div class="product-detail row justify-content-center">
                     <div class="col-2 col-5 col-sm-3 pt-2">
-                        <img src="../../img/Img_Nam/Asomi/aosomi14b.png" alt="" class="img-fluid"
+                        <img src="../../dist/img/Img_Nam/Asomi/aosomi14b.png" alt="" class="img-fluid"
                             style="max-height: 70px;">
                     </div>
                     <div class="col-7 col-5 col-sm-7 pt-2">
@@ -239,11 +239,11 @@
     <div class="container mt-4 mb-4">
         <div id="menu_chilren_NAMNU">
             <ul>
-                <li><a href="../ThumucconNam/Aosomi.jsp">SƠ MI</a></li>
-                <li><a href="../ThumucconNam/Aothun.jsp">ÁO THUN </a></li>
-                <li><a href="../ThumucconNam/Aokhoac.jsp">ÁO KHOÁC</a></li>
-                <li><a href="../ThumucconNam/Quanjean.jsp">QUẦN JEAN</a></li>
-                <li><a href="../ThumucconNam/Quanshort.jsp">QUẦN SHORT & TÂY</a></li>
+                <li><a href="../../pages/thu-muc-con-nam/Aosomi.jsp">SƠ MI</a></li>
+                <li><a href="../../pages/thu-muc-con-nam/Aothun.jsp">ÁO THUN </a></li>
+                <li><a href="../../pages/thu-muc-con-nam/Aokhoac.jsp">ÁO KHOÁC</a></li>
+                <li><a href="../../pages/thu-muc-con-nam/Quanjean.jsp">QUẦN JEAN</a></li>
+                <li><a href="../../pages/thu-muc-con-nam/Quanshort.jsp">QUẦN SHORT & TÂY</a></li>
 
             </ul>
         </div>
@@ -261,16 +261,16 @@
         </div>
         <div class="page-block3-items row justify-content-center">
             <div class="col-lg-4 mt-3">
-                <a href="../ThumucconNam/Aokhoac.jsp">
-                    <img src="../img/nam-3.jpg" alt="" class="img-fluid img_hot_gatori">
+                <a href="../../pages/thu-muc-con-nam/Aokhoac.jsp">
+                    <img src="../../dist/img/nam-3.jpg" alt="" class="img-fluid img_hot_gatori">
                 </a>
-                <a href="../ThumucconNam/Aosomi.jsp" class="d-flex mt-3">
-                    <img src="../img/nam-2.jpg" alt="" class="img-fluid img_hot_gatori">
+                <a href="../../pages/thu-muc-con-nam/Aosomi.jsp" class="d-flex mt-3">
+                    <img src="../../dist/img/nam-2.jpg" alt="" class="img-fluid img_hot_gatori">
                 </a>
             </div>
             <div class="col-lg-8 mt-3">
-                <a href="../ThumucconNam/Quanshort.jsp">
-                    <img src="../img/nam-1.jpg" alt="" class="img-fluid img_hot_gatori">
+                <a href="../../pages/thu-muc-con-nam/Quanshort.jsp">
+                    <img src="../../dist/img/nam-1.jpg" alt="" class="img-fluid img_hot_gatori">
                 </a>
             </div>
         </div>

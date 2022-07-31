@@ -1,7 +1,6 @@
-package controllers.client.productGirl;
+package controllers.client.productsGirl.subProductsGirl;
 
-import dao.client.implement.KhoacDao;
-import dao.client.implement.ProductGirlDao;
+import dao.client.implement.YemDao;
 import models.Product;
 
 import javax.servlet.*;
@@ -11,22 +10,22 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-@WebServlet(name = "ServletProductsKhoac", value = "/ServletProductsKhoac")
-public class ServletProductsKhoac extends HttpServlet {
+@WebServlet(urlPatterns = "/Client/ProductsYem")
+public class ServletProductsYem extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html; charset=UTF-8");
 
-        KhoacDao dao = new KhoacDao();
-        List<Product> listProductsKhoac = null;
+        YemDao dao = new YemDao();
+        List<Product> listProductsYem = null;
         try {
-            listProductsKhoac = dao.getListKhoac();
+            listProductsYem = dao.getListYem();
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-        request.setAttribute("listProductsKhoac", listProductsKhoac);
-        request.getRequestDispatcher("/CLIENT/pages/thu-muc-con-nu/AoKhoac.jsp").forward(request,response);
+        request.setAttribute("listProductsYem", listProductsYem);
+        request.getRequestDispatcher("/CLIENT/pages/thu-muc-con-nu/Yem.jsp").forward(request,response);
     }
 
     @Override

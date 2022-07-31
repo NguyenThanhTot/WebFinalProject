@@ -274,14 +274,15 @@
         <h4>SẢN PHẨM NỔI BẬT</h4>
     </div>
     <div class="row justify-content-center">
+        <c:forEach items="${productsFeatured}" var="product">
         <div class="product-item col-5 col-lg-3 pb-3">
             <div class="image-product mt-3" style="background-image: url(../../dist/img/Nu/AoThun/thun3.jpg);">
             </div>
-            <b class="title-product d-flex justify-content-center mt-2">Áo thun Oversize Unisex UNS12</b>
+            <b class="title-product d-flex justify-content-center mt-2">${product.nameProduct}</b>
             <div class="price-product mb-4">
                 <div class="price_pd_left">
-                    <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">290.000vnd</p>
-                    <strike class="price-discount" style="font-size: 12px;">300.000vnd</strike>
+                    <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">${product.priceDesc}</p>
+                    <strike class="price-discount" style="font-size: 12px;">${product.price}</strike>
                 </div>
                 <div class="price_pd_right">
                     <i class="far fa-heart" aria-hidden="true"></i>
@@ -292,148 +293,41 @@
                 <div class="btn_muangay_coating"></div>
             </div>
         </div>
-
-        <div class="product-item col-5 col-lg-3 pb-3">
-            <div class="image-product mt-3" style="background-image: url(../../dist/img/Nu/Quan/quan17.jpg);">
-            </div>
-            <b class="title-product d-flex justify-content-center mt-2">Quần sooc bò vạt CV32</b>
-            <div class="price-product mb-4">
-                <div class="price_pd_left">
-                    <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">330.000vnd</p>
-                    <strike class="price-discount" style="font-size: 12px;">350.000vnd</strike>
-                </div>
-                <div class="price_pd_right">
-                    <i class="far fa-heart" aria-hidden="true"></i>
-                    <i class="fa fa-heart" aria-hidden="true"></i>
-                </div>
-            </div>
-            <div class="btn_muangay">MUA NGAY
-                <div class="btn_muangay_coating"></div>
-            </div>
-        </div>
-
-        <div class="product-item col-5 col-lg-3 pb-3">
-            <div class="image-product mt-3" style="background-image: url(../../dist/img/Nu/AoKhoac/khoac2.jpg);">
-            </div>
-            <b class="title-product d-flex justify-content-center mt-2">Áo khoác nữ công sở CS52</b>
-            <div class="price-product mb-4">
-                <div class="price_pd_left">
-                    <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">399.000vnd</p>
-                    <strike class="price-discount" style="font-size: 12px;">415.000vnd</strike>
-                </div>
-                <div class="price_pd_right">
-                    <i class="far fa-heart" aria-hidden="true"></i>
-                    <i class="fa fa-heart" aria-hidden="true"></i>
-                </div>
-            </div>
-            <div class="btn_muangay">MUA NGAY
-                <div class="btn_muangay_coating"></div>
-            </div>
-        </div>
-
-        <div class="product-item col-5 col-lg-3 pb-3">
-            <div class="image-product mt-3" style="background-image: url(../../dist/img/Nu/Vay/vay9.jpg);">
-            </div>
-            <b class="title-product d-flex justify-content-center mt-2">Chân váy chữ A cá tính CT62</b>
-            <div class="price-product mb-4">
-                <div class="price_pd_left">
-                    <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">315.000vnd</p>
-                    <strike class="price-discount" style="font-size: 12px;">330.000vnd</strike>
-                </div>
-                <div class="price_pd_right">
-                    <i class="far fa-heart" aria-hidden="true"></i>
-                    <i class="fa fa-heart" aria-hidden="true"></i>
-                </div>
-            </div>
-            <div class="btn_muangay">MUA NGAY
-                <div class="btn_muangay_coating"></div>
-            </div>
-        </div>
+        </c:forEach>
     </div>
-
+</div>
+<div class="container mt-4">
+    <div class="page-block3-heading mb-3" style="text-align: center">
+        <h4>SẢN PHẨM ĐANG SALE</h4>
+    </div>
     <div class="row justify-content-center">
-        <div class="product-item col-5 col-lg-3 pb-3">
-            <div class="image-product mt-3" style="background-image: url(../../dist/img/Nu/Yem/yem9.jpg);">
-            </div>
-            <b class="title-product d-flex justify-content-center mt-2">Yếm jean tua tua đính chữ DY72</b>
-            <div class="price-product mb-4">
-                <div class="price_pd_left">
-                    <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">340.000vnd</p>
-                    <strike class="price-discount" style="font-size: 12px;">360.000vnd</strike>
+        <c:forEach items="${listProductsSaleGirl}" var="product">
+            <div class="product-item col-5 col-lg-3 pb-3">
+                <div class="image-product mt-3" style="background-image: url(../../dist/img/Nu/AoThun/thun7.jpg);">
                 </div>
-                <div class="price_pd_right">
-                    <i class="far fa-heart" aria-hidden="true"></i>
-                    <i class="fa fa-heart" aria-hidden="true"></i>
+                <b class="title-product d-flex justify-content-center mt-2">${product.nameProduct}</b>
+                <div class="price-product mb-4">
+                    <div class="price_pd_left">
+                        <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">${product.priceDesc}</p>
+                        <strike class="price-discount" style="font-size: 12px;">${product.price}</strike>
+                    </div>
+                    <div class="price_pd_right">
+                        <i class="far fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
                 </div>
-            </div>
-            <div class="btn_muangay">MUA NGAY
-                <div class="btn_muangay_coating"></div>
-            </div>
-        </div>
-
-        <div class="product-item col-5 col-lg-3 pb-3">
-            <div class="image-product mt-3" style="background-image: url(../../dist/img/Nu/AoThun/thun6.jpg);">
-            </div>
-            <b class="title-product d-flex justify-content-center mt-2">Áo thun cotton tay ngắn CT25</b>
-            <div class="price-product mb-4">
-                <div class="price_pd_left">
-                    <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">299.000vnd</p>
-                    <strike class="price-discount" style="font-size: 12px;">310.000vnd</strike>
-                </div>
-                <div class="price_pd_right">
-                    <i class="far fa-heart" aria-hidden="true"></i>
-                    <i class="fa fa-heart" aria-hidden="true"></i>
+                <div class="btn_muangay">MUA NGAY
+                    <div class="btn_muangay_coating"></div>
                 </div>
             </div>
-            <div class="btn_muangay">MUA NGAY
-                <div class="btn_muangay_coating"></div>
-            </div>
-        </div>
-
-        <div class="product-item col-5 col-lg-3 pb-3">
-            <div class="image-product mt-3" style="background-image: url(../../dist/img/Nu/AoHoodie/hoodie5.jpg);">
-            </div>
-            <b class="title-product d-flex justify-content-center mt-2">Áo hoodie phong cách PC35</b>
-            <div class="price-product mb-4">
-                <div class="price_pd_left">
-                    <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">360.000vnd</p>
-                    <strike class="price-discount" style="font-size: 12px;">390.000vnd</strike>
-                </div>
-                <div class="price_pd_right">
-                    <i class="far fa-heart" aria-hidden="true"></i>
-                    <i class="fa fa-heart" aria-hidden="true"></i>
-                </div>
-            </div>
-            <div class="btn_muangay">MUA NGAY
-                <div class="btn_muangay_coating"></div>
-            </div>
-        </div>
-
-        <div class="product-item col-5 col-lg-3 pb-3">
-            <div class="image-product mt-3" style="background-image: url(../../dist/img/Nu/AoSomi/somi15.jpg);">
-            </div>
-            <b class="title-product d-flex justify-content-center mt-2">Áo thun Oversize Unisex UNS12</b>
-            <div class="price-product mb-4">
-                <div class="price_pd_left">
-                    <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">315.000vnd</p>
-                    <strike class="price-discount" style="font-size: 12px;">330.000vnd</strike>
-                </div>
-                <div class="price_pd_right">
-                    <i class="far fa-heart" aria-hidden="true"></i>
-                    <i class="fa fa-heart" aria-hidden="true"></i>
-                </div>
-            </div>
-            <div class="btn_muangay">MUA NGAY
-                <div class="btn_muangay_coating"></div>
-            </div>
-        </div>
+        </c:forEach>
     </div>
 </div>
 <div class="container mt-4 mb-5">
     <div class="container-heading mb-4" style="text-align: center">
-        <h4>SẢN PHẨM SALE</h4>
-            <div class="row justify-content-center">
-                <c:forEach items="${listP}" var="product">
+        <h4>SẢN PHẨM GỢI Ý</h4>
+        <div class="row justify-content-center">
+            <c:forEach items="${listS}" var="product">
                 <div class="product-item col-5 col-lg-3 pb-3">
                     <div class="image-product mt-3" style="background-image: url(../../dist/img/Nu/AoThun/thun7.jpg);">
                     </div>
@@ -442,33 +336,6 @@
                         <div class="price_pd_left">
                             <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">${product.priceDesc}</p>
                             <strike class="price-discount" style="font-size: 12px;">${product.price}</strike>
-                        </div>
-                        <div class="price_pd_right">
-                            <i class="far fa-heart" aria-hidden="true"></i>
-                            <i class="fa fa-heart" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="btn_muangay">MUA NGAY
-                        <div class="btn_muangay_coating"></div>
-                    </div>
-                </div>
-                </c:forEach>
-            </div>
-    </div>
-</div>
-<div class="container mt-4 mb-5">
-    <div class="container-heading mb-4" style="text-align: center">
-        <h4>SẢN PHẨM GỢI Ý</h4>
-        <div class="row justify-content-center">
-            <c:forEach items="${listS}" var="products">
-                <div class="product-item col-5 col-lg-3 pb-3">
-                    <div class="image-product mt-3" style="background-image: url(../../dist/img/Nu/AoThun/thun7.jpg);">
-                    </div>
-                    <b class="title-product d-flex justify-content-center mt-2">${products.nameProduct}</b>
-                    <div class="price-product mb-4">
-                        <div class="price_pd_left">
-                            <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">${products.priceDesc}</p>
-                            <strike class="price-discount" style="font-size: 12px;">${products.price}</strike>
                         </div>
                         <div class="price_pd_right">
                             <i class="far fa-heart" aria-hidden="true"></i>

@@ -1,9 +1,7 @@
-package controllers.client.news;
+package controllers.client.productsGirl.subProductsGirl;
 
-
-import dao.client.implement.NewsDao;
-import models.News;
-
+import models.Product;
+import dao.client.implement.QuanDao;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -11,22 +9,21 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-@WebServlet(urlPatterns = "/Client/News")
-public class ServletNews extends HttpServlet {
+@WebServlet(urlPatterns = "/Client/ProductsQuan")
+public class ServletProductsQuan extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html; charset=UTF-8");
 
-        NewsDao dao = new NewsDao();
-        List<News> listN = null;
+        QuanDao dao = new QuanDao();
+        List<Product> listProductsQuan = null;
         try {
-            listN = dao.getListNews();
+            listProductsQuan = dao.getListQuan();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-        request.setAttribute("listN", listN);
-        request.getRequestDispatcher("/CLIENT/pages/other/bang-tin.jsp").forward(request,response);
+        request.setAttribute("listProductsQuan", listProductsQuan);
+        request.getRequestDispatcher("/CLIENT/pages/thu-muc-con-nu/Quan.jsp").forward(request,response);
     }
 
     @Override

@@ -1,7 +1,6 @@
-package controllers.client.productGirl;
+package controllers.client.productsGirl.subProductsGirl;
 
 import dao.client.implement.ThunDao;
-import dao.client.implement.YemDao;
 import models.Product;
 
 import javax.servlet.*;
@@ -11,22 +10,22 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-@WebServlet(name = "ServletProductsYem", value = "/Client/ProductsYem")
-public class ServletProductsYem extends HttpServlet {
+@WebServlet(urlPatterns = "/Client/ProductsVay")
+public class ServletProductsVay extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html; charset=UTF-8");
 
-        YemDao dao = new YemDao();
-        List<Product> listProductsYem = null;
+        ThunDao dao = new ThunDao();
+        List<Product> listProductsVay = null;
         try {
-            listProductsYem = dao.getListYem();
+            listProductsVay = dao.getListThun();
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-        request.setAttribute("listProductsYem", listProductsYem);
-        request.getRequestDispatcher("/CLIENT/pages/thu-muc-con-nu/Yem.jsp").forward(request,response);
+        request.setAttribute("listProductsVay", listProductsVay);
+        request.getRequestDispatcher("/CLIENT/pages/thu-muc-con-nu/Vay.jsp").forward(request,response);
     }
 
     @Override

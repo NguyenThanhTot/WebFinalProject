@@ -1,7 +1,6 @@
-package controllers.client.productGirl;
+package controllers.client.productsGirl.subProductsGirl;
 
 import dao.client.implement.ThunDao;
-import dao.client.implement.UuDaiDao;
 import models.Product;
 
 import javax.servlet.*;
@@ -11,22 +10,22 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-@WebServlet(name = "ServletProductsUuDai", value = "/Client/ProductsUuDai")
-public class ServletProductsUuDai extends HttpServlet {
+@WebServlet(urlPatterns = "/Client/ProductsThun")
+public class ServletProductsThun extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html; charset=UTF-8");
 
-        UuDaiDao dao = new UuDaiDao();
-        List<Product> listProductsUuDai = null;
+        ThunDao dao = new ThunDao();
+        List<Product> listProductsThun = null;
         try {
-            listProductsUuDai = dao.getListUuDai();
+            listProductsThun = dao.getListThun();
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-        request.setAttribute("listProductsUuDai", listProductsUuDai);
-        request.getRequestDispatcher("/CLIENT/pages/thu-muc-con-nu/SieuUuDai.jsp").forward(request,response);
+        request.setAttribute("listProductsThun", listProductsThun);
+        request.getRequestDispatcher("/CLIENT/pages/thu-muc-con-nu/AoThun.jsp").forward(request,response);
     }
 
     @Override
