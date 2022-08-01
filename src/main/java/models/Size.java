@@ -9,6 +9,10 @@ public class Size {
         SizeName = sizeName;
     }
 
+    public Size() {
+
+    }
+
     public String getIdSize() {
         return IdSize;
     }

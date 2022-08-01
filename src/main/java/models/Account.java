@@ -17,6 +17,10 @@ public class Account {
         Phone = phone;
     }
 
+    public Account() {
+
+    }
+
     public String getIdAccount() {
         return IdAccount;
     }

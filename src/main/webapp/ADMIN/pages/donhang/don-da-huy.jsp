@@ -17,10 +17,9 @@
     <!-- Theme style -->
     <link href="<%=request.getContextPath()%>/ADMIN/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
     <!-- AdminLTE Skins. Choose a skin from the css/skins
-           folder instead of downloading all of them to reduce the load. -->
+         folder instead of downloading all of them to reduce the load. -->
     <link href="<%=request.getContextPath()%>/ADMIN/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
-    <!-- LINK MY_CSS -->
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/ADMIN/dist/css/My_CSS.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -28,6 +27,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="<%=request.getContextPath()%>/ADMIN/dist/css/My_CSS.css">
+
 </head>
 
 <style>
@@ -43,7 +43,7 @@
 
     <header class="main-header">
         <!-- Logo -->
-        <a href="../../index.html" class="logo"><b>Admin</b>DTD</a>
+        <a href="../../index.jsp" class="logo"><b>Admin</b>DTD</a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
             <!-- Sidebar toggle button-->
@@ -166,7 +166,7 @@
                             <!-- Menu Footer-->
                             <li class="user-footer">
                                 <div class="pull-right">
-                                    <a href="../../pages/cauhinh/dang-nhap.html" class="btn btn-default btn-flat">Đăng xuất</a>
+                                    <a href="../dang-nhap.jsp" class="btn btn-default btn-flat">Đăng xuất</a>
                                 </div>
                             </li>
                         </ul>
@@ -175,7 +175,6 @@
             </div>
         </nav>
     </header>
-    <!-- Left side column. contains the logo and sidebar -->
     <!-- Left side column. contains the logo and sidebar -->
     <aside class="main-sidebar">
         <!-- sidebar: style can be found in sidebar.less -->
@@ -186,8 +185,8 @@
                 <div class="input-group">
                     <input type="text" name="q" class="form-control" placeholder="Tìm kiếm..."/>
                     <span class="input-group-btn">
-              <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-            </span>
+                    <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                  </span>
                 </div>
             </form>
             <!-- /.search form -->
@@ -195,7 +194,7 @@
             <ul class="sidebar-menu">
                 <li class="header">THỐNG KÊ</li>
                 <li class="treeview">
-                    <a href="../../index.html">
+                    <a href="../../index.jsp">
                         <i class="fa fa-pie-chart"></i> <span>Chi Tiết Thống Kê</span>
                     </a>
                 </li>
@@ -207,9 +206,9 @@
                         <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="mau-sac.html"><i class="fa fa-circle-o"></i>Màu Sắc</a></li>
-                        <li><a href="size-sp.html"><i class="fa fa-circle-o"></i>Size Sản Phẩm</a></li>
-                        <li><a href="danh-sach-sp.html"><i class="fa fa-circle-o"></i>Danh Sách Sản Phẩm</a></li>
+                        <li><a href="../sanpham/mau-sac.jsp"><i class="fa fa-circle-o"></i>Màu Sắc</a></li>
+                        <li><a href="../sanpham/size-sp.jsp"><i class="fa fa-circle-o"></i>Size Sản Phẩm</a></li>
+                        <li><a href="../sanpham/danh-sach-sp.jsp"><i class="fa fa-circle-o"></i>Danh Sách Sản Phẩm</a></li>
                     </ul>
                 </li>
                 <li class="treeview">
@@ -219,25 +218,25 @@
                         <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="../donhang/tat-ca-don-hang.html"><i class="fa fa-circle-o"></i> Tất Cả Đơn Hàng</a></li>
-                        <li><a href="../donhang/don-da-giao.html"><i class="fa fa-circle-o"></i> Đơn Đã Giao</a></li>
-                        <li><a href="../donhang/dang-xu-ly.html"><i class="fa fa-circle-o"></i> Đang xử lý</a></li>
+                        <li><a href="../donhang/tat-ca-don-hang.jsp"><i class="fa fa-circle-o"></i> Tất Cả Đơn Hàng</a></li>
+                        <li><a href="don-da-giao.jsp"><i class="fa fa-circle-o"></i> Đơn Đã Giao</a></li>
+                        <li><a href="dang-xu-ly.jsp"><i class="fa fa-circle-o"></i> Đang xử lý</a></li>
                     </ul>
                 </li>
                 <li class="treeview">
-                    <a href="../khachhang/khachhang.html">
+                    <a href="../khachhang/khachhang.jsp">
                         <i class="fa fa-users"></i>
                         <span>Khách Hàng</span>
                     </a>
                 </li>
                 <li class="treeview">
-                    <a href="../bangtin/bangtin.html">
+                    <a href="../bangtin/bangtin.jsp">
                         <i class="fa  fa-comment-o"></i>
                         <span>Bảng tin</span>
                     </a>
                 </li>
                 <li>
-                    <a href="../hopthu/hopthu.html">
+                    <a href="../hopthu/hopthu.jsp">
                         <i class="fa fa-envelope"></i> <span>Hộp Thư</span>
                         <small class="label pull-right bg-yellow">12</small>
                     </a>
@@ -248,11 +247,11 @@
                         <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="../cauhinh/dang-nhap.html"><i class="fa fa-circle-o"></i> Đăng Nhập</a></li>
-                        <li><a href="../cauhinh/man-hinh-khoa.html"><i class="fa fa-circle-o"></i> Màn hình khóa</a></li>
-                        <li><a href="../cauhinh/404.html"><i class="fa fa-circle-o"></i> 404 Lỗi</a></li>
-                        <li><a href="../cauhinh/500.html"><i class="fa fa-circle-o"></i> 500 Lỗi</a></li>
-                        <li><a href="../cauhinh/trang-trong.html"><i class="fa fa-circle-o"></i> Trang Trống</a></li>
+                        <li><a href="../dang-nhap.jsp"><i class="fa fa-circle-o"></i> Đăng Nhập</a></li>
+                        <li><a href="../cauhinh/man-hinh-khoa.jsp"><i class="fa fa-circle-o"></i> Màn hình khóa</a></li>
+                        <li><a href="../cauhinh/404.jsp"><i class="fa fa-circle-o"></i> 404 Lỗi</a></li>
+                        <li><a href="../cauhinh/500.jsp"><i class="fa fa-circle-o"></i> 500 Lỗi</a></li>
+                        <li><a href="../cauhinh/trang-trong.jsp"><i class="fa fa-circle-o"></i> Trang Trống</a></li>
                     </ul>
                 </li>
             </ul>
@@ -267,139 +266,100 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Màu Sắc
+                Đơn Hàng
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> TRANG CHỦ</a></li>
-                <li><a href="#">SẢN PHẨM</a></li>
-                <li class="active">MÀU SẮC</li>
+                <li><a href="#">ĐƠN HÀNG</a></li>
+                <li class="active">TẤT CẢ</li>
             </ol>
         </section>
 
         <!-- Main content -->
         <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box">
+                        <div class="box-body table-responsive no-padding">
+                            <table class="table table-hover">
+                                <tbody>
+                                <tr>
+                                    <th style="width: 100px">MÃ ĐƠN HÀNG</th>
+                                    <th style="width: 100px">ID KH</th>
+                                    <th style="width: 100px">NGÀY ĐẶT HÀNG</th>
+                                    <th style="width: 100px">TÌNH TRẠNG</th>
+                                    <th style="width: 100px"></th>
+                                </tr>
 
-            <!-- Default box -->
-            <div class="box">
-                <div class="box-header">
-                    <h3 class="box-title">Bảng màu sản phẩm</h3>
-                    <button class="btn btn-default pull-right btn_add_new_item"><i class="fa fa-plus"></i> Thêm mới</button>
-                </div><!-- /.box-header -->
-                <div class="box-body no-padding">
-                    <table class="table table-condensed">
-                        <tbody>
-                        <tr>
-                            <%--                            <th style="width: 60px">STT</th>--%>
-                            <th style="width: 200px">MÃ MÀU</th>
-                            <th style="width: 200px">TÊN MÀU</th>
-                            <th style="width: 200px">Thao tac</th>
-                            <th style="width: 50px"></th>
-                        </tr>
+                                <c:forEach items="${listOrderCancel}" var="o">
+                                    <tr class="item_in_table">
+                                        <td style="width: 100px">${o.idOrder}</td>
+                                        <td style="width: 100px">${o.idAccount}</td>
+                                        <td style="width: 100px">${o.orderTime}</td>
+                                        <td style="width: 100px">
+                                            <div class="label status_order">${o.status}</div>
+                                        </td>
+                                        <td>
+                                            <div style="font-size: 18px;" class="my_editANDremove">
+                                                <i class="fa fa-edit"></i>
+                                                <a href="">Xem chi tiết</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </c:forEach>
 
-                        <c:forEach items="${listColor}" var="c">
-                            <tr class="item_in_table">
-                                <td>${c.color_id}</td>
-                                <td>${c.color_name}</td>
-                                <td>
-                                    <div style="font-size: 18px;" class="my_editANDremove">
-                                        <button onclick="editDataColor(${c.color_id}, ${c.color_name})" class="fa fa-edit btn-edit-item"></button>
-                                        <a href="deleteColor?uid=${c.color_id}" class="fa fa-trash-o btn-del-item"></a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </c:forEach>
-
-                        </tbody>
-                    </table>
-                </div><!-- /.box-body -->
+                                <%--                                        <tr class="item_in_table">--%>
+                                <%--                                            <td style="width: 50px">1</td>--%>
+                                <%--                                            <td style="width: 100px">DH-01</td>--%>
+                                <%--                                            <td style="width: 100px">183</td>--%>
+                                <%--                                            <td style="width: 100px">--%>
+                                <%--                                                - <span class="MaSP_info">SMABC</span>  X <span class="SL_info">1</span><br>--%>
+                                <%--                                                - <span class="MaSP_info">SMABA</span>  X <span class="SL_info">1</span><br>--%>
+                                <%--                                                - <span class="MaSP_info">SMABC</span>  X <span class="SL_info">1</span><br>--%>
+                                <%--                                            </td>--%>
+                                <%--                                            <td style="width: 100px">1900000VNĐ</td>--%>
+                                <%--                                            <td style="width: 100px">20/11/2021</td>--%>
+                                <%--                                            <td style="width: 100px">--%>
+                                <%--                                                <small class="label label-info">Đang xử lý</small>--%>
+                                <%--                                            </td>--%>
+                                <%--                                            <td>--%>
+                                <%--                                                <div style="font-size: 18px;" class="my_editANDremove">--%>
+                                <%--                                                    <i class="fa fa-edit"></i>--%>
+                                <%--                                                    <i class="fa fa-trash-o btn-del-item"></i>--%>
+                                <%--                                                </div>--%>
+                                <%--                                            </td>--%>
+                                <%--                                        </tr>--%>
+                                <%--                                        <tr class="item_in_table">--%>
+                                <%--                                            <td style="width: 50px">2</td>--%>
+                                <%--                                            <td style="width: 100px">DH-02</td>--%>
+                                <%--                                            <td style="width: 100px">123</td>--%>
+                                <%--                                            <td style="width: 100px">--%>
+                                <%--                                                - <span class="MaSP_info">SAMC</span>  X <span class="SL_info">1</span><br>--%>
+                                <%--                                                - <span class="MaSP_info">SASM</span>  X <span class="SL_info">1</span><br>--%>
+                                <%--                                                - <span class="MaSP_info">SMAA</span>  X <span class="SL_info">1</span><br>--%>
+                                <%--                                            </td>--%>
+                                <%--                                            <td style="width: 100px">1299000VNĐ</td>--%>
+                                <%--                                            <td style="width: 100px">20/11/2021</td>--%>
+                                <%--                                            <td style="width: 100px">--%>
+                                <%--                                                <small class="label label-success">Đã giao</small>--%>
+                                <%--                                            </td>--%>
+                                <%--                                            <td>--%>
+                                <%--                                                <div style="font-size: 18px;" class="my_editANDremove">--%>
+                                <%--                                                    <i class="fa fa-edit"></i>--%>
+                                <%--                                                    <i class="fa fa-trash-o btn-del-item"></i>--%>
+                                <%--                                                </div>--%>
+                                <%--                                            </td>--%>
+                                <%--                                        </tr>--%>
+                                </tbody>
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div><!-- /.box -->
+                </div>
             </div>
-
-        </section><!-- /.content -->
+        </section>
     </div><!-- /.content-wrapper -->
 </div><!-- ./wrapper -->
 
-<!-- Form tạo mới dữ liệu -->
-<div id="add_new_item">
-    <section>
-        <div id="bg_add_new_item"></div>
-        <div class="row">
-            <!-- left column -->
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <!-- general form elements -->
-                <div class="box box-primary">
-                    <div class="box-header">
-                        <h3 class="box-title">Tạo màu mới</h3>
-                        <i class="fa fa-times" id="close-form-addnew"></i>
-                    </div><!-- /.box-header -->
-                    <!-- form start -->
-                    <form role="form" action="AddColor" method="post">
-                        <div class="box-body">
-                            <div class="form-group">
-                                <label for="mamau">Mã màu</label>
-                                <input name="mamau" type="text" class="form-control" id="mamau" placeholder="Nhập mã màu">
-                            </div>
-                            <div class="form-group">
-                                <label for="tenmau">Tên màu</label>
-                                <input name="tenmau" type="text" class="form-control" id="tenmau" placeholder="Nhập tên màu">
-                            </div>
-
-                            <div class="box-footer">
-                                <button type="submit" class="btn btn-primary">Thêm mới</button>
-                                <button class="btn btn-secondary">Hủy</button>
-                            </div>
-                    </form>
-                </div><!-- /.box -->
-            </div>
-            <!--/.col (left) -->
-            <div class="col-md-3"></div>
-        </div>
-    </section>
-</div>
-<!-- End Form tạo mới dữ liệu -->
-
-<!-- Form edit dữ liệu -->
-<div id="edit_item">
-    <section>
-        <div id="bg_edit_item"></div>
-        <div class="row">
-            <!-- left column -->
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <!-- general form elements -->
-                <div class="box box-primary">
-                    <div class="box-header">
-                        <h3 class="box-title">Chỉnh sửa thông tin màu</h3>
-                        <i class="fa fa-times" id="close-form-edit"></i>
-                    </div><!-- /.box-header -->
-                    <!-- form start -->
-                    <form role="form">
-                        <div class="box-body">
-                            <div class="form-group">
-                                <label for="mamau">Mã màu</label>
-                                <input type="text" class="form-control" id="mamauEdit" placeholder="Nhập mã màu" value="">
-                            </div>
-                            <div class="form-group">
-                                <label for="tenmau">Tên màu</label>
-                                <input type="text" class="form-control" id="tenmauEdit" placeholder="Nhập tên màu" value="">
-                            </div>
-                            <div class="box-footer">
-                                <button type="submit" class="btn btn-primary">Cập nhật</button>
-                                <button class="btn btn-secondary">Hủy</button>
-                            </div>
-                        </div>
-                    </form>
-                </div><!-- /.box -->
-            </div>
-            <!--/.col (left) -->
-            <div class="col-md-3"></div>
-        </div>
-    </section>
-</div>
-<!-- End Form edit dữ liệu -->
-
-
-<script src="<%=request.getContextPath()%>/ADMIN/dist/js/MyJS.js"></script>
 <!-- jQuery 2.1.3 -->
 <script src="<%=request.getContextPath()%>/ADMIN/plugins/jQuery/jQuery-2.1.3.min.js"></script>
 <!-- Bootstrap 3.3.2 JS -->
@@ -410,6 +370,23 @@
 <script src='<%=request.getContextPath()%>/ADMIN/plugins/fastclick/fastclick.min.js'></script>
 <!-- AdminLTE App -->
 <script src="<%=request.getContextPath()%>/ADMIN/dist/js/app.min.js" type="text/javascript"></script>
+
+<script>
+    $(document).ready(function(){
+        //Xử lý nút xóa
+        var status = $('.status_order');
+        console.log(status.length);
+        for (let i = 0; i < status.length; i++) {
+            console.log(status[i].innerHTML);
+            if(status[i].innerHTML=="Đã hoàn thành"){
+                status[i].classList.add("label-success");
+            }
+            if(status[i].innerHTML=="Đơn hàng bị hủy"){
+                status[i].classList.add("label-danger");
+            }
+        }
+    });
+</script>
 </body>
 
 </html>

@@ -1,5 +1,4 @@
-package models;
-import java.util.Date;
+package modelsAdmin;
 
 public class News {
     private String NewsId;
@@ -15,10 +14,6 @@ public class News {
         Title = title;
         DateUpdate = dateUpdate;
         Description = description;
-    }
-
-    public News() {
-
     }
 
     public String getNewsId() {
