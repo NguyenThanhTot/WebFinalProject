@@ -5,22 +5,19 @@
 <head>
     <title>Áo sơ mi</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>Ao Khoac</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!--link css-->
+    <link rel="stylesheet"  href="<%=request.getContextPath()%>/CLIENT/dist/css/menu_con.css">
+    <link rel="stylesheet"  href="<%=request.getContextPath()%>/CLIENT/dist/css/menu.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/CLIENT/dist/css/product.css">
     <!-- LINK FONT MENU font-family: 'Arima Madurai', cursive;-->
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@900&display=swap" rel="stylesheet">
     <!-- LINK FONT LOGO MENU font-family: 'Bungee Shade', cursive;-->
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
-    <!-- Link css for menu -->
-
-    <!-- <link rel="stylesheet" href="../css/Nam.css"> -->
-    <link rel="stylesheet" href="../../my_css/menu.css">
-    <link rel="stylesheet" href="../../my_css/product.css">
-    <link rel="stylesheet" href="../../my_css/Menu_con.css">
 
 </head>
 
@@ -100,26 +97,29 @@
     <!-- Giao diện khi click vào cart-button -->
     <div class="cart-right container-fluid" style="position: fixed;  left:0;top: 0;right:0;bottom:0;overflow-y:scroll;">
         <div class="row m-0" style="width: 100%;">
-            <div id="bg-close-cart" class="col-4 col-sm-4 col-lg-8 p-0 bg-dark" style="min-height: 100vh; opacity: 0.5;">
+            <div id="bg-close-cart" class="col-4 col-sm-4 col-lg-8 p-0 bg-dark"
+                 style="min-height: 100vh; opacity: 0.5;">
             </div>
             <div class="col-8 col-sm-8 col-lg-4 bg-white">
                 <div class="mb-5 mt-3 row justify-content-center">
                     <div class="col-5 col-sm-5">
                         <div class="pt-2 pb-2">GIỎ HÀNG</div>
                     </div>
-                    <div class="col-5 col-sm-5 align-self-center d-flex justify-content-end" id="button_cart_mobile_close">
+                    <div class="col-5 col-sm-5 align-self-center d-flex justify-content-end"
+                         id="button_cart_mobile_close">
                         <i class="fa fa-times" aria-hidden="true" style="font-size: 30px;"></i>
                     </div>
                 </div>
                 <div class="product-detail row justify-content-center">
                     <div class="col-2 col-5 col-sm-3 pt-2">
-                        <img src=".././img/Nu/AoThun/thun3.jpg" alt="" class="img-fluid" style="max-height: 70px;">
+                        <img src="../../dist/img/Img_Nam/Aokhoac/aokhoac1.png" alt="" class="img-fluid" style="max-height: 70px;">
                     </div>
                     <div class="col-7 col-5 col-sm-7 pt-2">
                         <div class="row" style="font-size: 13px;"> Áo thun Oversize Unisex UNS12 - Trắng, L</div>
                         <div class="row pt-2">
                             <div class="col-2 col-sm-2 p-0">
-                                <div class="d-flex justify-content-center" style="background-color: grey; width: 24px; height: 24px;">1</div>
+                                <div class="d-flex justify-content-center"
+                                     style="background-color: grey; width: 24px; height: 24px;">1</div>
                             </div>
                             <div class="col-6 col-sm-4">290.000Đ </div>
                             <div class="col-2 col-sm-6 align-self-center d-flex justify-content-end">
@@ -131,13 +131,15 @@
                 <hr>
                 <div class="product-detail row justify-content-center">
                     <div class="col-2 col-5 col-sm-3 pt-2">
-                        <img src="../../img/Img_Nam/Aokhoac/aokhoac3a.png" alt="" class="img-fluid" style="max-height: 70px;">
+                        <img src="../../dist/img/Img_Nam/Aothun/aoform1b.png" alt="" class="img-fluid"
+                             style="max-height: 70px;">
                     </div>
                     <div class="col-7 col-5 col-sm-7 pt-2">
                         <div class="row" style="font-size: 13px;">Áo khoác kaki unisex TH Store - Đỏ, L</div>
                         <div class="row pt-2">
                             <div class="col-2 col-sm-2 p-0">
-                                <div class="d-flex justify-content-center" style="background-color: grey; width: 24px; height: 24px;">1</div>
+                                <div class="d-flex justify-content-center"
+                                     style="background-color: grey; width: 24px; height: 24px;">1</div>
                             </div>
                             <div class="col-6 col-sm-4">197.000Đ</div>
                             <div class="col-2 col-sm-6 align-self-center d-flex justify-content-end">
@@ -149,13 +151,15 @@
                 <hr>
                 <div class="product-detail row justify-content-center">
                     <div class="col-2 col-5 col-sm-3 pt-2">
-                        <img src="../../img/Img_Nam/Asomi/aosomi14b.png" alt="" class="img-fluid" style="max-height: 70px;">
+                        <img src="../../dist/img/Img_Nam/Asomi/aosomi14b.png" alt="" class="img-fluid"
+                             style="max-height: 70px;">
                     </div>
                     <div class="col-7 col-5 col-sm-7 pt-2">
                         <div class="row" style="font-size: 13px;">Áo sơ mi sọc caro - Vàng, L</div>
                         <div class="row pt-2">
                             <div class="col-2 col-sm-2 p-0">
-                                <div class="d-flex justify-content-center" style="background-color: grey; width: 24px; height: 24px;">1</div>
+                                <div class="d-flex justify-content-center"
+                                     style="background-color: grey; width: 24px; height: 24px;">1</div>
                             </div>
                             <div class="col-6 col-sm-4">350.000Đ</div>
                             <div class="col-2 col-sm-6 align-self-center d-flex justify-content-end">
@@ -177,25 +181,28 @@
                 <div class="mt-3 mb-4 row justify-content-center">
                     <div class="col-6 col-sm-5 d-flex justify-content-start">
                         <div class="pt-2 pb-2 btn btn-dark">
-                            <a href="../other/gio-hang.jsp" style="text-decoration: none; color: #fff; font-size: 12px;">XEM GIỎ
-                            HÀNG</a>
+                            <a href="../other/gio-hang.jsp" style="text-decoration: none; color: #fff; font-size: 12px;">XEM
+                                GIỎ
+                                HÀNG</a>
                         </div>
                     </div>
                     <div class="col-6 col-sm-5 d-flex justify-content-end">
                         <div class="pt-2 pb-2 btn btn-dark">
-                            <a href="../other/thanh-toan.jsp" style="text-decoration: none; color: #fff; font-size: 12px;">THANH
-                            TOÁN</a>
+                            <a href="../other/thanh-toan.jsp"
+                               style="text-decoration: none; color: #fff; font-size: 12px;">THANH
+                                TOÁN</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- Giao diện khi click vào search button -->
-    <div class="search-right container-fluid" style="position: fixed; left:0;top: 0;right:0;bottom:0;overflow-y:scroll; z-index: 10;">
+    <div class="search-right container-fluid"
+         style="position: fixed; left:0;top: 0;right:0;bottom:0;overflow-y:scroll; z-index: 10;">
         <div class="row m-0" style="width: 100%;">
-            <div id="bg-close-search" class="col-4 col-sm-4 col-lg-8 p-0 bg-dark" style="min-height: 100vh; opacity: 0.5;">
+            <div id="bg-close-search" class="col-4 col-sm-4 col-lg-8 p-0 bg-dark"
+                 style="min-height: 100vh; opacity: 0.5;">
             </div>
             <div class="col-8 col-sm-8 col-lg-4 bg-white">
                 <div class="mb-5 mt-3 row justify-content-center">
@@ -207,8 +214,10 @@
                     </div>
                 </div>
                 <div class="form-group row justify-content-around">
-                    <input type="text" class="form-control col-10 col-lg-10" name="search" id="search" aria-describedby="helpId" placeholder="Nội dung tìm kiếm">
-                    <div class="col-1 col-lg-1 m-0 p-0 pt-2"><i class="fa fa-search" aria-hidden="true" style="font-size: 20px; height: 100%; cursor: pointer;"></i></div>
+                    <input type="text" class="form-control col-10 col-lg-10" name="search" id="search"
+                           aria-describedby="helpId" placeholder="Nội dung tìm kiếm">
+                    <div class="col-1 col-lg-1 m-0 p-0 pt-2"><i class="fa fa-search" aria-hidden="true"
+                                                                style="font-size: 20px; height: 100%; cursor: pointer;"></i></div>
                 </div>
             </div>
         </div>
@@ -242,226 +251,27 @@
         <div class="container">
             <h4>Áo sơ mi</h4>
             <div class="row justify-content-center">
+                <c:forEach items="${listProductAosomi}" var="product">
+                    <div class="product-item col-5 col-lg-3 pb-3">
+                        <div class="image-product mt-3" style="background-image: url(../../dist/img/Img_Nam/Aosomi/aosomi3.png);">
+                        </div>
+                        <b class="title-product d-flex justify-content-center mt-2">${product.nameProduct}</b>
+                        <div class="price-product mb-4">
+                            <div class="price_pd_left">
+                                <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">${product.priceDesc}</p>
+                                <strike class="price-discount" style="font-size: 12px;">${product.price}</strike>
+                            </div>
+                            <div class="price_pd_right">
+                                <i class="far fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="btn_muangay">MUA NGAY
+                            <div class="btn_muangay_coating"></div>
+                        </div>
+                    </div>
+                </c:forEach>
 
-                <div class="product-item col-5 col-lg-3 pb-3">
-                    <div class="image-product mt-3" style="background-image: url(../../img/Img_Nam/Asomi/aosomi1.png);">
-                    </div>
-                    <b class="title-product d-flex justify-content-center mt-2">Áo sơ mi cotton</b>
-                    <div class="price-product mb-4">
-                        <div class="price_pd_left">
-                            <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">199.000vnd</p>
-                            <strike class="price-discount" style="font-size: 12px;">199.000vnd</strike>
-                        </div>
-                        <div class="price_pd_right">
-                            <i class="far fa-heart" aria-hidden="true"></i>
-                            <i class="fa fa-heart" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="btn_muangay">MUA NGAY
-                        <div class="btn_muangay_coating"></div>
-                    </div>
-                </div>
-                <div class="product-item col-5 col-lg-3 pb-3">
-                    <div class="image-product mt-3" style="background-image: url(../../img/Img_Nam/Asomi/aosomi10.png);">
-                    </div>
-                    <b class="title-product d-flex justify-content-center mt-2">Áo sơ mi kiểu</b>
-                    <div class="price-product mb-4">
-                        <div class="price_pd_left">
-                            <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">109.000vnd</p>
-                            <strike class="price-discount" style="font-size: 12px;">109.000vnd</strike>
-                        </div>
-                        <div class="price_pd_right">
-                            <i class="far fa-heart" aria-hidden="true"></i>
-                            <i class="fa fa-heart" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="btn_muangay">MUA NGAY
-                        <div class="btn_muangay_coating"></div>
-                    </div>
-                </div>
-                <div class="product-item col-5 col-lg-3 pb-3">
-                    <div class="image-product mt-3" style="background-image: url(../../img/Img_Nam/Asomi/aosomi12.png);">
-                    </div>
-                    <b class="title-product d-flex justify-content-center mt-2">Áo sơ mi đơn giản</b>
-                    <div class="price-product mb-4">
-                        <div class="price_pd_left">
-                            <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">100.000vnd</p>
-                            <strike class="price-discount" style="font-size: 12px;">100.000vnd</strike>
-                        </div>
-                        <div class="price_pd_right">
-                            <i class="far fa-heart" aria-hidden="true"></i>
-                            <i class="fa fa-heart" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="btn_muangay">MUA NGAY
-                        <div class="btn_muangay_coating"></div>
-                    </div>
-                </div>
-                <div class="product-item col-5 col-lg-3 pb-3">
-                    <div class="image-product mt-3" style="background-image: url(../../img/Img_Nam/Asomi/aosomi12d.png);">
-                    </div>
-                    <b class="title-product d-flex justify-content-center mt-2">Áo sơ mi polido cao cấp</b>
-                    <div class="price-product mb-4">
-                        <div class="price_pd_left">
-                            <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">119.000vnd</p>
-                            <strike class="price-discount" style="font-size: 12px;">199.000vnd</strike>
-                        </div>
-                        <div class="price_pd_right">
-                            <i class="far fa-heart" aria-hidden="true"></i>
-                            <i class="fa fa-heart" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="btn_muangay">MUA NGAY
-                        <div class="btn_muangay_coating"></div>
-                    </div>
-                </div>
-                <div class="product-item col-5 col-lg-3 pb-3">
-                    <div class="image-product mt-3" style="background-image: url(../../img/Img_Nam/Asomi/aosomi14b.png);">
-                    </div>
-                    <b class="title-product d-flex justify-content-center mt-2">Áo swo mi sọc caro</b>
-                    <div class="price-product mb-4">
-                        <div class="price_pd_left">
-                            <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">299.000vnd</p>
-                            <strike class="price-discount" style="font-size: 12px;">350.000vnd</strike>
-                        </div>
-                        <div class="price_pd_right">
-                            <i class="far fa-heart" aria-hidden="true"></i>
-                            <i class="fa fa-heart" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="btn_muangay">MUA NGAY
-                        <div class="btn_muangay_coating"></div>
-                    </div>
-                </div>
-                <div class="product-item col-5 col-lg-3 pb-3">
-                    <div class="image-product mt-3" style="background-image: url(../../img/Img_Nam/Asomi/aosomi16b.png);">
-                    </div>
-                    <b class="title-product d-flex justify-content-center mt-2">Áo sơ mi trơn bóng</b>
-                    <div class="price-product mb-4">
-                        <div class="price_pd_left">
-                            <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">190.000vnd</p>
-                            <strike class="price-discount" style="font-size: 12px;">190.000vnd</strike>
-                        </div>
-                        <div class="price_pd_right">
-                            <i class="far fa-heart" aria-hidden="true"></i>
-                            <i class="fa fa-heart" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="btn_muangay">MUA NGAY
-                        <div class="btn_muangay_coating"></div>
-                    </div>
-                </div>
-                <div class="product-item col-5 col-lg-3 pb-3">
-                    <div class="image-product mt-3" style="background-image: url(../../img/Img_Nam/Asomi/aosomi2.png);">
-                    </div>
-                    <b class="title-product d-flex justify-content-center mt-2">Áo sơ mi Hàn Quốc cao cấp</b>
-                    <div class="price-product mb-4">
-                        <div class="price_pd_left">
-                            <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">119.000vnd</p>
-                            <strike class="price-discount" style="font-size: 12px;">119.000vnd</strike>
-                        </div>
-                        <div class="price_pd_right">
-                            <i class="far fa-heart" aria-hidden="true"></i>
-                            <i class="fa fa-heart" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="btn_muangay">MUA NGAY
-                        <div class="btn_muangay_coating"></div>
-                    </div>
-                </div>
-                <div class="product-item col-5 col-lg-3 pb-3">
-                    <div class="image-product mt-3" style="background-image: url(../../img/Img_Nam/Asomi/aosomi7b.png);">
-                    </div>
-                    <b class="title-product d-flex justify-content-center mt-2">Áo sơ mi tay ngắn</b>
-                    <div class="price-product mb-4">
-                        <div class="price_pd_left">
-                            <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">169.000vnd</p>
-                            <strike class="price-discount" style="font-size: 12px;">169.000vnd</strike>
-                        </div>
-                        <div class="price_pd_right">
-                            <i class="far fa-heart" aria-hidden="true"></i>
-                            <i class="fa fa-heart" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="btn_muangay">MUA NGAY
-                        <div class="btn_muangay_coating"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="product-item col-5 col-lg-3 pb-3">
-                    <div class="image-product mt-3" style="background-image: url(../../img/Img_Nam/Asomi/aosomi9.png);">
-                    </div>
-                    <b class="title-product d-flex justify-content-center mt-2">Áo sơ mi kiểu bông</b>
-                    <div class="price-product mb-4">
-                        <div class="price_pd_left">
-                            <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">179.000vnd</p>
-                            <strike class="price-discount" style="font-size: 12px;">179.000vnd</strike>
-                        </div>
-                        <div class="price_pd_right">
-                            <i class="far fa-heart" aria-hidden="true"></i>
-                            <i class="fa fa-heart" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="btn_muangay">MUA NGAY
-                        <div class="btn_muangay_coating"></div>
-                    </div>
-                </div>
-                <div class="product-item col-5 col-lg-3 pb-3">
-                    <div class="image-product mt-3" style="background-image: url(../../img/Img_Nam/Asomi/aosomie.png);">
-                    </div>
-                    <b class="title-product d-flex justify-content-center mt-2">Áo sơ mi Hàn cao cấp</b>
-                    <div class="price-product mb-4">
-                        <div class="price_pd_left">
-                            <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">179.000vnd</p>
-                            <strike class="price-discount" style="font-size: 12px;">179.000vnd</strike>
-                        </div>
-                        <div class="price_pd_right">
-                            <i class="far fa-heart" aria-hidden="true"></i>
-                            <i class="fa fa-heart" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="btn_muangay">MUA NGAY
-                        <div class="btn_muangay_coating"></div>
-                    </div>
-                </div>
-                <div class="product-item col-5 col-lg-3 pb-3">
-                    <div class="image-product mt-3" style="background-image: url(../../img/Img_Nam/Asomi/aosomi7d.png);">
-                    </div>
-                    <b class="title-product d-flex justify-content-center mt-2">Áo sơ mi tay ngắn cao cấp</b>
-                    <div class="price-product mb-4">
-                        <div class="price_pd_left">
-                            <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">179.000vnd</p>
-                            <strike class="price-discount" style="font-size: 12px;">179.000vnd</strike>
-                        </div>
-                        <div class="price_pd_right">
-                            <i class="far fa-heart" aria-hidden="true"></i>
-                            <i class="fa fa-heart" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="btn_muangay">MUA NGAY
-                        <div class="btn_muangay_coating"></div>
-                    </div>
-                </div>
-                <div class="product-item col-5 col-lg-3 pb-3">
-                    <div class="image-product mt-3" style="background-image: url(../../img/Img_Nam/Asomi/aosomi16a.png);">
-                    </div>
-                    <b class="title-product d-flex justify-content-center mt-2">Áo sơ mi tay ngắn cao cấp</b>
-                    <div class="price-product mb-4">
-                        <div class="price_pd_left">
-                            <p class="price-cost mt-1 mb-0" style="font-size: 14px; color: red;">179.000vnd</p>
-                            <strike class="price-discount" style="font-size: 12px;">179.000vnd</strike>
-                        </div>
-                        <div class="price_pd_right">
-                            <i class="far fa-heart" aria-hidden="true"></i>
-                            <i class="fa fa-heart" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="btn_muangay">MUA NGAY
-                        <div class="btn_muangay_coating"></div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -522,8 +332,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src="../../my_js/menu.js"></script>
-    <script src="../../my_js/onClickProductChild.js"></script>
+    <script src="<%=request.getContextPath()%>/CLIENT/dist/js/menu.js"></script>
+    <script src="<%=request.getContextPath()%>/CLIENT/dist/js/onClickProduct.js"></script>
 
 </body>
 
