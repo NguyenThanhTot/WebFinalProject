@@ -1,6 +1,7 @@
-package controllers.client.ProductBoy;
+package controllers.client.productsBoy.subProductsBoy;
 
-import dao.client.implement.AothunDao;
+
+import dao.client.implement.QuanShortDao;
 import models.Product;
 
 import javax.servlet.*;
@@ -10,22 +11,22 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-@WebServlet(name = "ServletProductAothun", value = "/ServletProductAothun")
-public class ServletProductAothun extends HttpServlet {
+@WebServlet(name = "ServletProductQuanShort", value = "/ServletProductQuanShort")
+public class ServletProductQuanShort extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("text/html; charset=UTF-8");
+        response.setContentType("text/html; harset=UTF-8");
 
-        AothunDao dao = new AothunDao();
+        QuanShortDao dao = new QuanShortDao();
         List<Product> listP = null;
         try {
-            listP = dao.getListAothun();
+            listP = dao.getlistQuanShort();
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
         request.setAttribute("listP", listP);
-        request.getRequestDispatcher("/CLIENT/pages/thu-muc-con-nam/Aothun.jsp").forward(request,response);
+        request.getRequestDispatcher("/CLIENT/pages/thu-muc-con-nam/Quanshort.jsp").forward(request,response);
     }
 
     @Override

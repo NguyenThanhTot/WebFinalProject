@@ -1,4 +1,4 @@
-package controllers.client.ProductBoy;
+package controllers.client.productsBoy.subProductsBoy;
 
 import dao.client.implement.AokhoacDao;
 import dao.client.implement.ProductBoyDao;
