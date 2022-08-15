@@ -11,21 +11,21 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-@WebServlet(name = "ServletProductQuanJean", value = "/ServletProductQuanJean")
+@WebServlet(urlPatterns = "/client/ServletProductQuanJean")
 public class ServletProductQuanJean extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html; charset=UTF-8");
 
         QuanJeanDao dao = new QuanJeanDao();
-        List<Product> listP = null;
+        List<Product> listProductQUanJean = null;
         try {
-            listP = dao.getlistQuanJean();
+            listProductQUanJean = dao.getlistQuanJean();
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-        request.setAttribute("listP", listP);
+        request.setAttribute("listP",listProductQUanJean);
         request.getRequestDispatcher("/CLIENT/pages/thu-muc-con-nam/Quanjean.jsp").forward(request,response);
     }
 

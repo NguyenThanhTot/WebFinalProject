@@ -10,21 +10,21 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-@WebServlet(name = "ServletProductAothun", value = "/ServletProductAothun")
+@WebServlet(urlPatterns = "/client/ServletProductAothun")
 public class ServletProductAothun extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html; charset=UTF-8");
 
         AothunDao dao = new AothunDao();
-        List<Product> listP = null;
+        List<Product> listProductAothun = null;
         try {
-            listP = dao.getListAothun();
+            listProductAothun = dao.getListAothun();
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-        request.setAttribute("listP", listP);
+        request.setAttribute("listP", listProductAothun);
         request.getRequestDispatcher("/CLIENT/pages/thu-muc-con-nam/Aothun.jsp").forward(request,response);
     }
 
